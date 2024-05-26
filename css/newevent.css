@@ -1,0 +1,148 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #a87fbd;
+    background: -webkit-linear-gradient(to right, #a87fbd, #E0EAFC);
+    background: linear-gradient(to right, #e0d4e7, #a87fbd);
+}
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background:hsla(283, 26%, 82%, 0.6);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.0rem 7%;
+    height: 80px;
+}
+.header .logo {
+    font-weight: bolder;
+    color: #624c5c;
+    text-decoration: none;
+    font-size: 2.0rem;
+    
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+
+.header .logo span {
+    color:#3c3039;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    font-family: 'PT Sans Caption', sans-serif;
+
+}
+
+
+.nav_links{
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.nav_links ul{
+    list-style-type: none; /* Вимкнути маркери списку */
+    padding: 0; 
+
+    justify-content: center;
+}
+.nav_links li{
+    display:inline-block;
+    padding: 0px 20 px;
+    margin-right: 50px;
+}
+.nav_links li a,
+.main_menu li a{
+    display: contents;
+    color: #773865;
+    font-weight: 700;
+    font-family: 'PT Sans Caption', sans-serif;
+    padding: 10px 20px; 
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover,
+.main_menu li a:hover {
+    color: #5a254d; 
+    text-shadow: 2px 2px 4px rgba(51, 40, 47, 0.5); 
+}
+
+
+.nav_links li a:active,
+.main_menu li a:active {
+    color: #3a1230; 
+    transform: scale(0.98);
+}
+
+.nav_links li .active{
+
+    text-decoration: underline;
+    color: #3a1230;
+
+}
+
+.main_menu {
+    text-align: center;
+}
+
+.main_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main_menu li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.main_menu li:last-child {
+    margin-right: 0; /* видаляємо відступ у останньому елементі */
+}
+.main_menu li a:hover{
+    color: #773865;
+}
+
+
+.container {
+    margin-top: 3%;
+    width: 400px;
+    border: ridge 1.5px white;
+    padding: 30px;
+}
+.form-control{
+    max-width: 500px;
+}
+
+.btn_btn_primary_mt_3{
+    background-color: #634076; 
+    color: rgb(230, 229, 229); 
+    text-align: center; 
+    margin-left:80px;
+    margin-top:30px;
+    text-decoration: none; 
+    display: inline-block; 
+    font-family: 'PT Sans Caption', sans-serif;
+    border: none;
+    padding: 10px 20px; 
+    text-align: center; 
+    display: inline-block; 
+    font-size: 16px; 
+    border-radius: 12px; 
+    cursor: pointer; 
+}
+.btn_btn_primary_mt_3:hover {
+    background-color: #472a57; 
+}
+
+.btn_btn_primary_mt_3:active {
+    background-color: #351b3d; 
+    transform: scale(0.98); 
+}

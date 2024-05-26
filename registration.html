@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="/css/registation.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+        <header class="header">
+            <a href="./index.html" class="logo">
+                <span>E</span>ventPlanner
+            </a>
+
+            <nav style="text-align: center;">
+                <ul class="nav_links">
+                    <li><a href="tips.html">Поради з управління часом</a></li>
+                    <li><a href="event.html">Події</a></li>
+                </ul>
+            </nav>
+            <nav class="main_menu">
+                <ul>
+              
+                    <li><a href="/login.html">Вхід</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="learn">
+               <h1>Реєстрація</h1>
+               <p>Приєднуйтеся до нашої спільноти! <br> Створіть обліковий запис, щоб отримати доступ до <br> всіх можливостей  нашої платформи для <br> планування та координації подій.</p>  
+            </section>
+    
+
+    
+                
+        <div class="container_1">
+            <form id="rgForm" name="RegForm" method="POST">
+        
+                <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text"   placeholder="Введіть ім'я"class="form-control" id="inputName" name="name">
+                </div>
+    
+                <div class="form-group">
+                    <label for="lastname">Прізвище</label>
+                    <input type="text"   placeholder="Введіть прізвище"class="form-control" id="inputLastName" name="lastname">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Електрона пошта</label>
+                    <input type="email"   placeholder="Введіть електронну пошту"class="form-control" id="inputEmail" aria-describedby="emailHelp" name="email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="phoneno">Номер телефону</label>
+                    <input type="text"  placeholder="Введіть номер телефону"class="form-control" id="inputPhoneno" name="phoneno">
+                </div>
+    
+                <div class="form-group">
+                    <label for="password" >Пароль</label>
+                    <input type="password"  placeholder="Введіть пароль" class="form-control" id="inputPassword" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="repeatpassword" >Підтвердити пароль</label>
+                    <input type="password"  placeholder="Підтвердити пароль" class="form-control" id="inputRepeatPassword" name="repeatpassword">
+                </div>
+
+    
+                <div id="errorMessage" class="error-message"></div>
+       
+                <button type="submit" class="btn btn-primary mt-3" value="send" name="submit">Зареєструватись</button>
+    
+            </form>
+        </main>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>

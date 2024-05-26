@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="./css/event.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span>E</span>ventPlanner
+        </a>
+
+        <nav style="text-align: center;">
+            <ul class="nav_links">
+                <li><a  href="tips.html">Поради з управління часом</a></li>
+                <li><a class="active" href="#">Події</a></li>
+            </ul>
+        </nav>
+
+        <nav class="main_menu">
+            <ul>
+                <li><a href="login.html">Вхід</a></li>
+                <li><a href="registration.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Топ-подій в Києві</h1>
+            <div class="event-list">
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/klavdia.jpg" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>KLAVDIA PETRIVNA</h2>
+                            <p>30 серпня 2024 18:00</p>
+                            <p>Київ, Палац спорту</p>
+                            <div class="event-info">
+                                
+                                <span>Микита Трохименко</span>
+                                <span>202-04-28</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+
+                    </div>
+                    
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/RomeoandJuliet.png" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>ДЖУЛЬЄТТА І РОМЕО</h2>
+                            <p>15 червня 2024 17:00</p>
+                            <p>Київ, Палац спорту</p>
+                            <div class="event-info">
+                                
+                                <span>Ірина Слободян</span>
+                                <span>2024-04-10</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/mavka.jpg" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>РЕЗИДЕНЦІЯ МАВКИ</h2>
+                            <p>31 травня 2024 11:30</p>
+                            <p>Київ, Миколаївська 2</p>
+                            <div class="event-info">
+                                
+                                <span>Іван Петрищук</span>
+                                <span>2024-05-10</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/pottery.png" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>ГОНЧАРСТВО</h2>
+                            <p>25 травня 2024 18:00</p>
+                            <p>Київ, Макарівська 75а</p>
+                            <div class="event-info">
+                                
+                                <span>Оксана Лиховенко</span>
+                                <span>2024-04-01</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/kyiv.png" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>ЕКСКУРСІЇ ПО КИЄВУ</h2>
+                            <p>30 травня 2024 10:00</p>
+                            <p>Київ</p>
+                            <div class="event-info">
+                                
+                                <span>Світлана Бакар</span>
+                                <span>2024-05-20</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/art.png" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>МАЛЮНКИ НА ВОДІ</h2>
+                            <p>25 травня 2024 18:00</p>
+                            <p>Київ, вул. Володимирська, 18</p>
+                            <div class="event-info">
+                                
+                                <span>Василина Сиклюк</span>
+                                <span>2024-05-15</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+
+                    </div>
+                </div>
+            </div>
+            <div id="registerModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p>Щоб приєднатися до цієї події, ви повинні зареєструватися.</p>
+                    <a href="./registration.html">Зареєструватись</a>
+                </div>
+            </div>
+
+
+            <h1>Заходи для дітей</h1>
+            <div class="event-list">
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/catinboots.jpg" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>КІТ У ЧОБОТЯХ</h2>
+                            <p>24 травня 2024 15:00</p>
+                            <p>Одеса, вул. Грецька, 48а</p>
+                            <div class="event-info">
+                                
+                                <span>Микита Трохименко</span>
+                                <span>202-04-28</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+                    </div>  
+                </div>
+               
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/peterpan.jpg" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>ПІТЕР ПЕН </h2>
+                            <p>26 травня 2024 12:00</p>
+                            <p>Київ,пров. Чайковського, 1</p>
+                            <div class="event-info">
+                                
+                                <span>Ірина Самойлов</span>
+                                <span>2024-05-15</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/master_klass_krio-morozhenoe-1.jpg" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>ХІМІЯ. КРІО-МОРОЗИВО</h2>
+                            <p>29 травня 2024 15:00</p>
+                            <p>Київ,пров. Чайковського, 4</p>
+                            <div class="event-info">
+                                
+                                <span>Михайло Микрон</span>
+                                <span>2024-05-20</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./img/mavka2.png" alt="Event Image">
+                    </div>
+                    <div class="event-details">
+                            <h2>РЕЗИДЕНЦІЯ МАВКИ</h2>
+                            <p>31 травня 2024 11:30</p>
+                            <p>Київ, Миколаївська 2</p>
+                            <div class="event-info">
+                                
+                                <span>Іван Петрищук</span>
+                                <span>2024-05-10</span>
+                            </div>
+                            <button class="join-button">ПРИЄДНАТИСЬ</button>
+
+                    </div>
+                </div>
+        </div>
+    </main>
+    
+    <script src="./js/joinwindow.js"></script>
+
+</body>
+</html>

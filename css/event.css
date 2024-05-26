@@ -1,0 +1,326 @@
+/* Загальні стилі для мобільних пристроїв */
+body {
+    padding: 0;
+    margin: 0;
+    background: #a87fbd;
+    background: -webkit-linear-gradient(to right, #a87fbd, #E0EAFC);
+    background: linear-gradient(to right, #e0d4e7, #a87fbd);
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: hsla(283, 26%, 82%, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.0rem 5%; /* зменшено padding для мобільних пристроїв */
+    height: 50px;
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: #624c5c;
+    text-decoration: none;
+    font-size: 1.5rem; /* зменшено шрифт для мобільних пристроїв */
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.header .logo span {
+    color: #3c3039;
+    text-decoration: underline;
+    font-size: 2.0rem; /* зменшено шрифт для мобільних пристроїв */
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.nav_links {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav_links ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 10px; /* зменшено padding для мобільних пристроїв */
+    margin-right: 20px; /* зменшено margin для мобільних пристроїв */
+}
+
+.nav_links li a,
+.main_menu li a {
+    display: contents;
+    color: #773865;
+    font-weight: 700;
+    font-family: 'PT Sans Caption', sans-serif;
+    padding: 10px 15px; /* зменшено padding для мобільних пристроїв */
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover,
+.main_menu li a:hover {
+    color: #5a254d;
+    text-shadow: 2px 2px 4px rgba(51, 40, 47, 0.5);
+}
+
+.nav_links li a:active,
+.main_menu li a:active {
+    color: #3a1230;
+    transform: scale(0.98);
+}
+
+.nav_links li .active {
+    text-decoration: underline;
+    color: #3a1230;
+}
+
+.main_menu {
+    text-align: center;
+}
+
+.main_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main_menu li {
+    display: inline-block;
+    margin-right: 10px; /* зменшено margin для мобільних пристроїв */
+}
+
+.main_menu li:last-child {
+    margin-right: 0;
+}
+
+.main_menu li a:hover {
+    color: #773865;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px; /* зменшено шрифт для мобільних пристроїв */
+    color: #242424;
+    margin-top: 20px; /* зменшено відступ для мобільних пристроїв */
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column; /* змінено на колонку для мобільних пристроїв */
+    margin-top: 20px; /* зменшено відступ для мобільних пристроїв */
+    margin-left: auto; /* вирівнювання по центру */
+    margin-right: auto; /* вирівнювання по центру */
+    gap: 20px;
+    width: 90%; /* ширина для мобільних пристроїв */
+}
+
+.event-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 8px rgba(50, 49, 49, 0.5);
+    width: 100%; /* повна ширина для мобільних пристроїв */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+h2{
+    text-align: center;
+}
+.event-item:hover {
+    transform: scale(1.05);
+}
+
+.event-item:hover .join-button {
+    display: block;
+}
+
+.event-item:hover .event-details p,
+.event-item:hover .event-details .event-info {
+    opacity: 0;
+}
+
+.event-image {
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.event-item:hover .event-image img {
+    transform: scale(1.1);
+}
+
+.event-details {
+    padding: 15px;
+    position: relative;
+    transition: opacity 0.3s;
+}
+
+.event-details h2 {
+    font-size: 1.2em; /* зменшено шрифт для мобільних пристроїв */
+    margin: 0 0 10px 0;
+}
+
+.event-details p {
+    margin: 5px 0;
+}
+
+.event-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 10px;
+}
+
+.event-favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #773865;
+}
+
+.join-button {
+    display: none;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #773865;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-button:hover {
+    background-color: #5a254d;
+}
+
+
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px; 
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Адаптивність для планшетів */
+@media (min-width: 768px) {
+    .header .logo {
+        font-size: 2.0rem;
+    }
+    
+    .header .logo span {
+        font-size: 2.5rem;
+    }
+
+    .nav_links li {
+        padding: 0px 15px;
+        margin-right: 30px;
+    }
+
+    .event-list {
+        margin-bottom: 50px;
+        flex-direction: row; /* змінено на ряд для планшетів */
+        flex-wrap: wrap; /* для розміщення елементів в декілька рядів */
+        justify-content: center; /* вирівнювання по центру */
+        gap: 20px;
+    }
+
+    .event-item {
+        width: 45%; /* ширина для планшетів */
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+}
+
+/* Адаптивність для настільних комп'ютерів */
+@media (min-width: 1024px) {
+    .header .logo {
+        font-size: 2.5rem;
+    }
+    
+    .header .logo span {
+        font-size: 3rem;
+    }
+
+    .nav_links li {
+        padding: 0px 20px;
+        margin-right: 50px;
+    }
+
+    .event-item {
+        width: 300px; /* фіксована ширина для настільних комп'ютерів */
+    }
+
+    h1 {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+}
+
+
+

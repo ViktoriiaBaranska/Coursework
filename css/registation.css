@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #ece4f4, #a87fbd);
+
+}
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background:hsla(283, 26%, 82%, 0.6);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.0rem 7%;
+    height: 80px;
+}
+.header .logo {
+    font-weight: bolder;
+    color: #624c5c;
+    text-decoration: none;
+    font-size: 2.0rem;
+    
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+
+.header .logo span {
+    color:#3c3039;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    font-family: 'PT Sans Caption', sans-serif;
+
+}
+
+
+.nav_links{
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.nav_links ul{
+    list-style-type: none; /* Вимкнути маркери списку */
+    padding: 0; 
+
+    justify-content: center;
+}
+.nav_links li{
+    display:inline-block;
+    padding: 0px 20 px;
+    margin-right: 50px;
+}
+.nav_links li a,
+.main_menu li a{
+    display: contents;
+    color: #773865;
+    font-weight: 700;
+    font-family: 'PT Sans Caption', sans-serif;
+    padding: 10px 20px; /* додайте відступи для зручності */
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover,
+.main_menu li a:hover {
+    color: #5a254d; /* Темніший колір тексту при наведенні */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Додайте нижню тінь при наведенні */
+}
+
+
+.main_menu {
+    text-align: center;
+}
+
+.main_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main_menu li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.main_menu li:last-child {
+    margin-right: 0; 
+}
+.main_menu li a:hover{
+    color: #773865;
+}
+
+
+
+
+
+
+section {
+    max-width: 100%;
+    width: 50%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:630px; /* made the content be at the middle */
+
+    background-size: cover;
+    padding: 0 200px;
+}
+
+
+h1 {
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: rgb(35, 28, 47);
+}
+.learn p {
+    color: rgba(0, 0, 0, 0.755);
+    line-height: 25px;
+    font-weight: 400;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 500;
+    color: rgb(35, 28, 47);
+}
+    
+.cta span {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.container_1{
+    width: 450px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    padding: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 .5em 0 rgb(0, 0, 0, .124);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group{
+    width:100%;
+    padding-top: 10px;
+
+}
+
+
+
+/*
+*/
+
+.btn-primary {
+    background-color: #602d7c; 
+    border: none;
+    color: rgb(230, 229, 229); 
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: #3e244f;
+    box-shadow: 5px 5px 10px rgba(39, 25, 41, 0.5); 
+    color: rgb(245, 245, 245); 
+}
+.error-message {
+    margin-top: 10px;
+    color: red;
+    font-size: 16px;
+    display: none;
+}
